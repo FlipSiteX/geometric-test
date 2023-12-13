@@ -1,0 +1,129 @@
+@font-face {
+    src: url("../fonts/cyrillicround.ttf");
+    font-family: "CyrRound";
+}
+@font-face {
+    src: url("../fonts/BloggerSans.ttf");
+    font-family: "BloggerSans";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -moz-user-select: none;
+}
+
+body {
+    background: url("../img/bg.jpg");
+    background-size: cover;
+}
+
+h1 {
+    font-family: "CyrRound", serif;
+    font-size: 6vh;
+    width: 50%;
+    line-height: 6.5vh;
+    margin: 5vh 0 0 18.5vw;
+}
+
+img {
+    width: 15vh;
+    margin: 0.2vh 0;
+    cursor: pointer;
+}
+
+img:first-child {
+    width: 12vh;
+}
+
+img:nth-child(2) {
+    margin-left: 4vw;
+}
+
+img:nth-child(3) {
+    margin-left: 8vw;
+}
+
+img:nth-child(4) {
+    margin-left: 14vw;
+}
+
+img:last-child {
+    width: 12vh;
+    margin-left: 20vw;
+}
+
+.shapes {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 26%;
+    left: 36%;
+    z-index: 0;
+}
+
+.information {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 2vw;
+    border-radius: 1.5vw 0 0 1.5vw;
+    background: white;
+    box-shadow: 0 0 10px 0 rgba(109, 109, 109, 0.78);
+    width: 75%;
+    max-height: 90%;
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+.information::-webkit-scrollbar {
+    width: 0.5vw;
+    background: #1fbe30;
+}
+
+.information::-webkit-scrollbar-thumb {
+    background: #00730c;
+    border-radius: 1vh;
+}
+
+.information .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.information h4 {
+    font-family: CyrRound, serif;
+    font-size: 4.5vh;
+    color: #00268c;
+}
+
+.information i {
+    font-size: 4vh;
+    cursor: pointer;
+}
+
+.information p {
+    font-family: BloggerSans, serif;
+    font-size: 3.3vh;
+    line-height: 5.25vh;
+    margin-top: 1vh;
+}
+
+.information .professions {
+    font-family: "CyrRound", serif;
+    font-size: 3vh;
+    border-radius: 0.75vw;
+    background: #1fbe30;
+    color: white;
+    border: none;
+    padding: 1vh 1vw;
+    width: max-content;
+    margin: 2.8vh 0 1.5vh 0;
+    cursor: pointer;
+}
